@@ -61,7 +61,7 @@ var collection3 = ee.ImageCollection('COPERNICUS/S2')
 var collection2= ee.ImageCollection('COPERNICUS/S2_SR')
                   .filter(ee.Filter.lt('CLOUDY_PIXEL_PERCENTAGE', 20))
                   .filterDate(Start,End)                
-                  //.filter(ee.Filter.dayOfYear(FirstDay, LastDay)) 
+                  .filter(ee.Filter.dayOfYear(0, 365))  
                   .sort('DATE_ACQUIRED',true);
 
 //Image Collection for Heat Change Graphic
