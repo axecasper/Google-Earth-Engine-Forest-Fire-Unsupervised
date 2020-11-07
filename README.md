@@ -219,7 +219,7 @@ var END =End.advance(50,'day');
 
 **Classified Image:** The image which is shows dry ground, healthy vegetation areas and burned areas.
 
-**Only Burned:** The layer which is represent only the burned areas.
+**Only Layers:** The code seperate and detect the classes like soil, tree, burned and show them one by one as new layer.
 
 * We can check all of them from Layers section as a layer of each panels.
 
